@@ -5,7 +5,7 @@
     font-family: Arial, sans-serif;
 }
 
-/* IMPORTANT FIX */
+
 html, body {
     width: 100%;
     max-width: 100%;
@@ -13,12 +13,12 @@ html, body {
     background: #ffffff;
 }
 
-/* NAVBAR */
+
 .navbar {
     background: #0b1fa8;
     color: white;
     height: 70px;
-    padding: 0 16px;
+    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,7 +30,6 @@ html, body {
     font-weight: bold;
 }
 
-/* NAV LINKS */
 .nav-links {
     display: flex;
     align-items: center;
@@ -42,14 +41,13 @@ html, body {
     text-decoration: none;
 }
 
-/* HAMBURGER */
 .hamburger {
     display: none;
     font-size: 26px;
     cursor: pointer;
 }
 
-/* PRIMARY BUTTON */
+
 .primary-btn {
     padding: 8px 16px;
     background: #007bff;
@@ -63,7 +61,7 @@ html, body {
     background: #0056b3;
 }
 
-/* SEARCH BAR */
+
 .search-section {
     padding: 15px;
     background: #f4f4f4;
@@ -71,9 +69,8 @@ html, body {
 }
 
 .search-form {
-    max-width: 100%;
     width: 100%;
-    margin: auto;
+    max-width: 100%;
     display: flex;
     border: 2px solid #ccc;
     border-radius: 6px;
@@ -104,45 +101,50 @@ html, body {
     margin-top: 5px;
 }
 
-/* INTRO */
+
 .intro {
     text-align: center;
     padding: 30px 15px;
 }
 
-/* CARDS */
+
 .card-section {
-    padding: 15px;
+    padding: 20px;
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* DESKTOP: 3 cards in one line */
+    gap: 20px;
 }
 
 .card {
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-bottom: 25px;
     overflow: hidden;
     text-align: center;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card img {
     width: 100%;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
 }
 
 .card h3 {
-    margin: 15px 0;
+    margin: 15px 0 10px;
 }
 
 .card p {
-    padding: 0 15px 10px;
+    padding: 0 15px 15px;
 }
 
-/* MOBILE NAV */
+
 @media (max-width: 768px) {
 
+    /* NAVBAR */
     .nav-links {
         position: fixed;
         top: 70px;
@@ -161,5 +163,14 @@ html, body {
 
     .hamburger {
         display: block;
+    }
+
+    /* CARDS */
+    .card-section {
+        grid-template-columns: 1fr; /* MOBILE: vertical cards */
+    }
+
+    .card img {
+        height: 200px;
     }
 }
