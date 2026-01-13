@@ -2,65 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Frontend Internship  Day 6</title>
+    <title>Static Frontend Internship</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- NAVBAR (Day 6) -->
-    <header class="navbar">
-        <div class="logo">LOGO</div>
-        <div class="menu">☰</div>
-    </header>
+<!-- NAVBAR (DAY 3 + DAY 4) -->
+<header class="navbar">
+    <div class="logo">LOGO</div>
 
-    <!--  DAY 5 SEARCH BAR (ADDED) -->
-    <section class="search-section">
-        <form id="searchForm" class="search-form">
-            <input
-                type="text"
-                id="searchInput"
-                placeholder="Search..."
-                aria-label="Search"
-            >
-            <button type="submit">🔍</button>
-        </form>
-        <p id="message"></p>
-    </section>
+    <nav class="nav-links" id="navLinks">
+        <a href="#">Home</a>
+        <a href="#">Frontend</a>
+        <a href="#">UI/UX</a>
+        <button class="primary-btn">Contact</button>
+    </nav>
 
-    <!-- DAY 6 CONTENT -->
-    <section class="content">
-        <h1>Frontend Internship</h1>
-        <h2>Day-6 Task Completed</h2>
-        <p>Name: <strong>Thakor Sneha</strong></p>
-        <p>This website is deployed using GitHub Pages.</p>
-    </section>
+    <div class="hamburger" id="hamburger">☰</div>
+</header>
 
-    <!-- CARD SECTION -->
-    <section class="card-section">
-        <div class="card">
-            <img src="https://www.freepik.com/free-vector/colourful-illustration-programmer-working_5483080.htm#fromView=keyword&page=1&position=4&uuid=6a462db7-da77-4492-8744-cbce5936f967&query=Front+end+developer" alt="Frontend">
-            <h3>Frontend Development</h3>
-            <p>Frontend developer with a strong eye for design and experience.</p>
-            <button>Explore</button>
-        </div>
+<!-- SEARCH BAR (DAY 5) -->
+<section class="search-section">
+    <form id="searchForm" class="search-form">
+        <input type="text" id="searchInput" placeholder="Search..." aria-label="Search">
+        <button type="submit">🔍</button>
+    </form>
+    <p id="message"></p>
+</section>
 
-        <div class="card">
-            <img src="https://via.placeholder.com/300x180" alt="UI UX">
-            <h3>UI and UX Components</h3>
-            <p>UI/UX designer focused on creating intuitive designs.</p>
-            <button>Explore</button>
-        </div>
+<!-- INTRO (DAY 1) -->
+<section class="intro">
+    <h1>Frontend Internship</h1>
+    <h2>All Tasks Completed (Day 1 – Day 6)</h2>
+    <p>This website is deployed using GitHub Pages.</p>
+</section>
 
-        <div class="card">
-            <img src="https://via.placeholder.com/300x180" alt="Responsive">
-            <h3>Responsive Design</h3>
-            <p>Layouts that work perfectly on all devices.</p>
-            <button>Explore</button>
-        </div>
-    </section>
+<!-- CARDS (DAY 6) -->
+<section class="card-section">
 
-    <script src="script.js"></script>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1581276879432-15a19d654956" alt="Frontend">
+        <h3>Frontend Development</h3>
+        <p>Frontend developer with a strong eye for design and experience in crafting responsive interfaces.</p>
+        <button class="primary-btn">Explore</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="UI UX">
+        <h3>UI & UX Design</h3>
+        <p>UI/UX designer focused on intuitive, user-centered, and accessible designs.</p>
+        <button class="primary-btn">Explore</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Responsive">
+        <h3>Responsive Design</h3>
+        <p>Layouts that adapt perfectly to mobiles, tablets, and desktops.</p>
+        <button class="primary-btn">Explore</button>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
