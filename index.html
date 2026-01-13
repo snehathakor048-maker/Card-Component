@@ -2,19 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Day 6 - Card Component</title>
+    <title>Frontend Internship  Day 6</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h2 class="title">Card Component</h2>
+    <!-- NAVBAR (Day 6) -->
+    <header class="navbar">
+        <div class="logo">LOGO</div>
+        <div class="menu">☰</div>
+    </header>
 
-    <div class="cards" id="cards">
-        <!-- Cards from JS -->
-    </div>
+    <!--  DAY 5 SEARCH BAR (ADDED) -->
+    <section class="search-section">
+        <form id="searchForm" class="search-form">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search..."
+                aria-label="Search"
+            >
+            <button type="submit">🔍</button>
+        </form>
+        <p id="message"></p>
+    </section>
+
+    <!-- DAY 6 CONTENT -->
+    <section class="content">
+        <h1>Frontend Internship</h1>
+        <h2>Day-6 Task Completed</h2>
+        <p>Name: <strong>Unnati</strong></p>
+        <p>This website is deployed using GitHub Pages.</p>
+    </section>
+
+    <!-- CARD SECTION -->
+    <section class="card-section">
+        <div class="card">
+            <img src="https://via.placeholder.com/300x180" alt="Frontend">
+            <h3>Frontend Development</h3>
+            <p>Frontend developer with a strong eye for design and experience.</p>
+            <button>Explore</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x180" alt="UI UX">
+            <h3>UI and UX Components</h3>
+            <p>UI/UX designer focused on creating intuitive designs.</p>
+            <button>Explore</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x180" alt="Responsive">
+            <h3>Responsive Design</h3>
+            <p>Layouts that work perfectly on all devices.</p>
+            <button>Explore</button>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
 </html>
-
