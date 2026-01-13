@@ -1,3 +1,12 @@
+// Mobile menu toggle (Day 4)
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+// Search bar validation (Day 5)
 document.getElementById("searchForm").addEventListener("submit", function (e) {
     e.preventDefault();
 
